@@ -17,9 +17,9 @@ function showContacts() {
                         <div>Company : ${user.company.name}</div>
                         <div>City    : ${user.address.city}</div>
                         <div>Zipcode : ${user.address.zipcode}</div>
-                    </div>`                    
+                    </div>`   
+                    console.log(user);                 
             }).join('');
-            console.log(users);
             message.innerHTML = player;
         })
         .catch((error)=>{
