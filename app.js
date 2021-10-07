@@ -18,9 +18,9 @@ function showContacts() {
                         <div>City    : ${user.address.city}</div>
                         <div>Zipcode : ${user.address.zipcode}</div>
                     </div>`   
-                    console.log(user);                 
             }).join('');
             message.innerHTML = player;
+            console.log(users);
         })
         .catch((error)=>{
             console.log('Promise rejected.');
